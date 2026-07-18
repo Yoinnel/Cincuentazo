@@ -24,7 +24,7 @@ public class MainMenuController {
     private void onPlayButtonClick(ActionEvent event) {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/players-selector-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/fxml/players-selector-view.fxml"));
             Parent root = loader.load();
 
             javafx.scene.control.Button boton = (javafx.scene.control.Button) event.getSource();
@@ -62,7 +62,7 @@ public class MainMenuController {
     private void onHowToPlayButtonClick(ActionEvent event) {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/how-to-play-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/fxml/how-to-play-view.fxml"));
             Parent root = loader.load();
 
             javafx.scene.control.Button boton = (javafx.scene.control.Button) event.getSource();

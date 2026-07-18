@@ -75,7 +75,7 @@ public class PlayersSelectorController {
         }
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/game-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/fxml/game-view.fxml"));
             Parent root = loader.load();
             GameController gameController = loader.getController();
 
@@ -115,7 +115,7 @@ public class PlayersSelectorController {
     private void onPlayersSelectorBackButtonClick(ActionEvent event) throws  Exception {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/menu-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/univalle/cincuentazo/fxml/fxml/menu-view.fxml"));
             Parent root = loader.load();
 
             javafx.scene.control.Button boton = (javafx.scene.control.Button) event.getSource();
