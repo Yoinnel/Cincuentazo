@@ -1,4 +1,4 @@
-package com.univalle.cincuentazo;
+package com.univalle.cincuentazo.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
