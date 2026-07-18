@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.univalle.cincuentazo.controller.GameController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="800.0" spacing="10.0" style="-fx-border-color: red;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0">
+         <children>
+            <ImageView fx:id="playerCard1" fitHeight="200.0" fitWidth="150.0" onMouseClicked="#onCardClick" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="playerCard2" fitHeight="200.0" fitWidth="150.0" onMouseClicked="#onCardClick" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="playerCard3" fitHeight="200.0" fitWidth="150.0" onMouseClicked="#onCardClick" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="playerCard4" fitHeight="200.0" fitWidth="150.0" onMouseClicked="#onCardClick" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="botTop" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="800.0" spacing="10.0" style="-fx-border-color: blue;" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+         </children>
+      </HBox>
+      <VBox fx:id="botLeft" alignment="CENTER" prefHeight="620.0" prefWidth="210.0" style="-fx-border-color: purple;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="botLeft1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fx:id="botLeft2" fitHeight="150.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fx:id="botLeft3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fx:id="botLeft4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="botRight" alignment="CENTER" prefHeight="662.0" prefWidth="210.0" style="-fx-border-color: green;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../images/poker_deck/back_card.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="249.0" layoutY="250.0" prefHeight="202.0" prefWidth="780.0" spacing="15.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <ImageView fx:id="deckPool" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#onDeckPoolClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/poker_deck/card_pool.png" />
+               </image></ImageView>
+            <ImageView fx:id="centralCard" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="Amount" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="EndGameButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onEndGameButtonClick" text="SALIR DE LA PARTIDA" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
